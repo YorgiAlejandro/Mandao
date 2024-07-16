@@ -1,17 +1,13 @@
-//
-//  MandaoApp.swift
-//  Mandao
-//
-//  Created by yorgi on 7/15/24.
-//
-
 import SwiftUI
 
 @main
-struct MandaoApp: App {
+struct MyApp: App {
+    @StateObject private var appState = AppState()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(appState)
         }
     }
 }

@@ -7,18 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E008E532C46EB3100FA6DF0 /* BannerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E008E522C46EB3100FA6DF0 /* BannerDataModel.swift */; };
+		1E008E552C46EBCC00FA6DF0 /* BannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E008E542C46EBCC00FA6DF0 /* BannerViewModel.swift */; };
+		1E3174E32C46FE0500C8A667 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3174E22C46FE0500C8A667 /* ImageLoader.swift */; };
+		1E3174E52C46FE4000C8A667 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3174E42C46FE4000C8A667 /* AsyncImageView.swift */; };
+		1E3174E72C4703C400C8A667 /* CategoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3174E62C4703C400C8A667 /* CategoryDataModel.swift */; };
+		1E3174E92C4703E000C8A667 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3174E82C4703E000C8A667 /* CategoryViewModel.swift */; };
+		1E3174EC2C47228700C8A667 /* StoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3174EB2C47228700C8A667 /* StoreDataModel.swift */; };
+		1E3174EE2C4722A600C8A667 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3174ED2C4722A600C8A667 /* StoreViewModel.swift */; };
+		1E3496ED2C45EF0700C178DA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3496EC2C45EF0700C178DA /* HomeView.swift */; };
+		1E3496EF2C45FECE00C178DA /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3496EE2C45FECE00C178DA /* TopBarView.swift */; };
+		1E3496F12C45FF8F00C178DA /* BannerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3496F02C45FF8F00C178DA /* BannerCard.swift */; };
+		1E3496F32C460C2700C178DA /* BannerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3496F22C460C2700C178DA /* BannerListView.swift */; };
+		1E3496F52C460C7700C178DA /* CategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3496F42C460C7700C178DA /* CategoryCard.swift */; };
+		1E3496F72C460EA800C178DA /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3496F62C460EA800C178DA /* CategoryListView.swift */; };
+		1E3496F92C4612D900C178DA /* StoreCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3496F82C4612D900C178DA /* StoreCard.swift */; };
+		1E3496FB2C4618C500C178DA /* StoreListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3496FA2C4618C500C178DA /* StoreListView.swift */; };
 		1E7206FA2C45DA6D00DEB6D2 /* MandaoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7206F92C45DA6D00DEB6D2 /* MandaoApp.swift */; };
 		1E7206FC2C45DA6D00DEB6D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7206FB2C45DA6D00DEB6D2 /* ContentView.swift */; };
 		1E7206FE2C45DA6F00DEB6D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7206FD2C45DA6F00DEB6D2 /* Assets.xcassets */; };
 		1E7207012C45DA6F00DEB6D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7207002C45DA6F00DEB6D2 /* Preview Assets.xcassets */; };
+		1E72070C2C45DCD500DEB6D2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E72070B2C45DCD500DEB6D2 /* LoginView.swift */; };
+		1EB51F4B2C4630F4007F833D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB51F4A2C4630F4007F833D /* AppState.swift */; };
+		1EB51F522C4635BF007F833D /* CityDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB51F512C4635BF007F833D /* CityDataModel.swift */; };
+		1EB51F542C4635E8007F833D /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB51F532C4635E8007F833D /* CityViewModel.swift */; };
+		1EB51F572C463809007F833D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1EB51F562C463809007F833D /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E008E522C46EB3100FA6DF0 /* BannerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerDataModel.swift; sourceTree = "<group>"; };
+		1E008E542C46EBCC00FA6DF0 /* BannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewModel.swift; sourceTree = "<group>"; };
+		1E3174E22C46FE0500C8A667 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		1E3174E42C46FE4000C8A667 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		1E3174E62C4703C400C8A667 /* CategoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDataModel.swift; sourceTree = "<group>"; };
+		1E3174E82C4703E000C8A667 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		1E3174EB2C47228700C8A667 /* StoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDataModel.swift; sourceTree = "<group>"; };
+		1E3174ED2C4722A600C8A667 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
+		1E3496EC2C45EF0700C178DA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1E3496EE2C45FECE00C178DA /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
+		1E3496F02C45FF8F00C178DA /* BannerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCard.swift; sourceTree = "<group>"; };
+		1E3496F22C460C2700C178DA /* BannerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerListView.swift; sourceTree = "<group>"; };
+		1E3496F42C460C7700C178DA /* CategoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCard.swift; sourceTree = "<group>"; };
+		1E3496F62C460EA800C178DA /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
+		1E3496F82C4612D900C178DA /* StoreCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCard.swift; sourceTree = "<group>"; };
+		1E3496FA2C4618C500C178DA /* StoreListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListView.swift; sourceTree = "<group>"; };
 		1E7206F62C45DA6D00DEB6D2 /* Mandao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mandao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7206F92C45DA6D00DEB6D2 /* MandaoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandaoApp.swift; sourceTree = "<group>"; };
 		1E7206FB2C45DA6D00DEB6D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E7206FD2C45DA6F00DEB6D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E7207002C45DA6F00DEB6D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E72070B2C45DCD500DEB6D2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1EB51F452C462969007F833D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1EB51F4A2C4630F4007F833D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		1EB51F512C4635BF007F833D /* CityDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataModel.swift; sourceTree = "<group>"; };
+		1EB51F532C4635E8007F833D /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +68,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EB51F572C463809007F833D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E3496EB2C45EEF800C178DA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1E3496EC2C45EF0700C178DA /* HomeView.swift */,
+				1E3496EE2C45FECE00C178DA /* TopBarView.swift */,
+				1E3496F02C45FF8F00C178DA /* BannerCard.swift */,
+				1E3496F22C460C2700C178DA /* BannerListView.swift */,
+				1E3496F42C460C7700C178DA /* CategoryCard.swift */,
+				1E3496F62C460EA800C178DA /* CategoryListView.swift */,
+				1E3496F82C4612D900C178DA /* StoreCard.swift */,
+				1E3496FA2C4618C500C178DA /* StoreListView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		1E7206ED2C45DA6D00DEB6D2 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +109,11 @@
 		1E7206F82C45DA6D00DEB6D2 /* Mandao */ = {
 			isa = PBXGroup;
 			children = (
+				1EB51F452C462969007F833D /* Info.plist */,
+				1E7207092C45DCB400DEB6D2 /* Model */,
+				1E7207082C45DCAA00DEB6D2 /* View */,
+				1E7207072C45DC9D00DEB6D2 /* ViewModel */,
 				1E7206F92C45DA6D00DEB6D2 /* MandaoApp.swift */,
-				1E7206FB2C45DA6D00DEB6D2 /* ContentView.swift */,
 				1E7206FD2C45DA6F00DEB6D2 /* Assets.xcassets */,
 				1E7206FF2C45DA6F00DEB6D2 /* Preview Content */,
 			);
@@ -65,6 +126,49 @@
 				1E7207002C45DA6F00DEB6D2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E7207072C45DC9D00DEB6D2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1EB51F532C4635E8007F833D /* CityViewModel.swift */,
+				1E008E542C46EBCC00FA6DF0 /* BannerViewModel.swift */,
+				1E3174E22C46FE0500C8A667 /* ImageLoader.swift */,
+				1E3174E82C4703E000C8A667 /* CategoryViewModel.swift */,
+				1E3174ED2C4722A600C8A667 /* StoreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1E7207082C45DCAA00DEB6D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E3496EB2C45EEF800C178DA /* Home */,
+				1E72070A2C45DCC200DEB6D2 /* Login */,
+				1E7206FB2C45DA6D00DEB6D2 /* ContentView.swift */,
+				1E3174E42C46FE4000C8A667 /* AsyncImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E7207092C45DCB400DEB6D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1EB51F4A2C4630F4007F833D /* AppState.swift */,
+				1EB51F512C4635BF007F833D /* CityDataModel.swift */,
+				1E008E522C46EB3100FA6DF0 /* BannerDataModel.swift */,
+				1E3174E62C4703C400C8A667 /* CategoryDataModel.swift */,
+				1E3174EB2C47228700C8A667 /* StoreDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1E72070A2C45DCC200DEB6D2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1E72070B2C45DCD500DEB6D2 /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +187,9 @@
 			dependencies = (
 			);
 			name = Mandao;
+			packageProductDependencies = (
+				1EB51F562C463809007F833D /* Alamofire */,
+			);
 			productName = Mandao;
 			productReference = 1E7206F62C45DA6D00DEB6D2 /* Mandao.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +218,9 @@
 				Base,
 			);
 			mainGroup = 1E7206ED2C45DA6D00DEB6D2;
+			packageReferences = (
+				1EB51F552C463809007F833D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 1E7206F72C45DA6D00DEB6D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +247,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E3496F12C45FF8F00C178DA /* BannerCard.swift in Sources */,
+				1E3496EF2C45FECE00C178DA /* TopBarView.swift in Sources */,
+				1E008E552C46EBCC00FA6DF0 /* BannerViewModel.swift in Sources */,
+				1E3496FB2C4618C500C178DA /* StoreListView.swift in Sources */,
+				1E008E532C46EB3100FA6DF0 /* BannerDataModel.swift in Sources */,
+				1E3174E52C46FE4000C8A667 /* AsyncImageView.swift in Sources */,
+				1EB51F4B2C4630F4007F833D /* AppState.swift in Sources */,
+				1E72070C2C45DCD500DEB6D2 /* LoginView.swift in Sources */,
+				1EB51F542C4635E8007F833D /* CityViewModel.swift in Sources */,
+				1E3496ED2C45EF0700C178DA /* HomeView.swift in Sources */,
+				1E3174E72C4703C400C8A667 /* CategoryDataModel.swift in Sources */,
 				1E7206FC2C45DA6D00DEB6D2 /* ContentView.swift in Sources */,
+				1E3174EC2C47228700C8A667 /* StoreDataModel.swift in Sources */,
+				1E3174E92C4703E000C8A667 /* CategoryViewModel.swift in Sources */,
 				1E7206FA2C45DA6D00DEB6D2 /* MandaoApp.swift in Sources */,
+				1E3174E32C46FE0500C8A667 /* ImageLoader.swift in Sources */,
+				1E3496F92C4612D900C178DA /* StoreCard.swift in Sources */,
+				1E3496F72C460EA800C178DA /* CategoryListView.swift in Sources */,
+				1EB51F522C4635BF007F833D /* CityDataModel.swift in Sources */,
+				1E3496F32C460C2700C178DA /* BannerListView.swift in Sources */,
+				1E3174EE2C4722A600C8A667 /* StoreViewModel.swift in Sources */,
+				1E3496F52C460C7700C178DA /* CategoryCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +405,7 @@
 				DEVELOPMENT_TEAM = XV2X26M98W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mandao/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +435,7 @@
 				DEVELOPMENT_TEAM = XV2X26M98W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mandao/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +476,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1EB51F552C463809007F833D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1EB51F562C463809007F833D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EB51F552C463809007F833D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E7206EE2C45DA6D00DEB6D2 /* Project object */;
 }
