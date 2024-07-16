@@ -1,6 +1,6 @@
-##Mandao App
+Mandao App
 
-#Mandao App is a food delivery application designed to make it easy for users to find and order food from various restaurants in different provinces. The app allows users to select their location and view personalized offers, banners, restaurant categories, and a complete list of available businesses in their area.
+Mandao App is a food delivery application designed to make it easy for users to find and order food from various restaurants in different provinces. The app allows users to select their location and view personalized offers, banners, restaurant categories, and a complete list of available businesses in their area.
 
 Features
 
@@ -8,42 +8,14 @@ Province Selection: Users can select their province to view offers and services 
 Banners View: Displays promotions and highlighted offers in the app.
 Restaurant Categories: Allows users to explore different types of food and restaurant categories.
 Business List: Provides a detailed list of restaurants and businesses available in the selected province, along with their ratings and other relevant information.
-Technologies Used
+Technologies Used:
 
 SwiftUI: For designing the user interface.
 Alamofire: For network requests and API handling.
 MVVM (Model-View-ViewModel): Architecture used to separate responsibilities and facilitate scalability and maintainability of the code.
 CocoaPods: For dependency management.
-Project Structure
 
-The project is structured as follows:
-
-sql
-Copy code
-MandaoApp/
-├── Model/
-│   ├── City.swift
-│   ├── Banner.swift
-│   ├── Category.swift
-│   ├── Store.swift
-│   └── AppState.swift
-├── ViewModel/
-│   ├── CityViewModel.swift
-│   ├── BannerViewModel.swift
-│   ├── CategoryViewModel.swift
-│   ├── StoreViewModel.swift
-├── View/
-│   ├── LoginView.swift
-│   ├── TopBarView.swift
-│   ├── BannerListView.swift
-│   ├── CategoryListView.swift
-│   ├── BusinessListView.swift
-│   ├── StoreCard.swift
-│   └── HomeView.swift
-├── Assets/
-│   └── Images/
-└── MandaoApp.swift
-Installation
+Installation:
 
 To run this project locally, follow these steps:
 
