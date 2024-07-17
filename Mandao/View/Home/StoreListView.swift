@@ -2,6 +2,7 @@ import SwiftUI
 
 struct StoreListView: View {
     @EnvironmentObject var storeViewModel: StoreViewModel
+    @EnvironmentObject var appState: AppState
 
     var body: some View {
         VStack {
@@ -20,14 +21,13 @@ struct StoreListView: View {
             }
             .padding(10)
         }
-        .onAppear {
-            storeViewModel.fetchStores(areaId: 1) // Asegúrate de usar el areaId correcto
-        }
     }
 }
 
-#Preview{
-    StoreListView()
+struct StoreListView_Previews: PreviewProvider {
+    static var previews: some View {
+        StoreListView()
             .environmentObject(StoreViewModel())
+            .environmentObject(AppState())
+    }
 }
-

@@ -5,6 +5,7 @@ struct ContentView: View {
     @StateObject private var cityViewModel = CityViewModel()
     @StateObject private var bannerViewModel = BannerViewModel()
     @StateObject private var categoryViewModel = CategoryViewModel()
+    @StateObject private var storeViewModel = StoreViewModel()
 
     var body: some View {
         Group {
@@ -14,6 +15,7 @@ struct ContentView: View {
                     .environmentObject(bannerViewModel)
                     .environmentObject(categoryViewModel)
                     .environmentObject(cityViewModel)
+                    .environmentObject(storeViewModel)
             } else {
                 LoginView()
                     .environmentObject(appState)
@@ -24,6 +26,7 @@ struct ContentView: View {
             cityViewModel.fetchCities()
             bannerViewModel.observeProvinceChanges(appState: appState)
             categoryViewModel.observeProvinceChanges(appState: appState)
+            storeViewModel.observeProvinceChanges(appState: appState)
         }
     }
 }

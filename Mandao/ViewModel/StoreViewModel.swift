@@ -11,10 +11,8 @@ class StoreViewModel: ObservableObject {
 
         request.validate()
             .responseDecodable(of: StoreListResponse.self) { response in
-                print("Response received")
                 switch response.result {
                 case .success(let storeListResponse):
-                    print("Request succeeded with response: \(storeListResponse)")
                     if storeListResponse.status == 1 {
                         print("Status is 1, updating stores")
                         DispatchQueue.main.async {

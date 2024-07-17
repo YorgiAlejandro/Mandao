@@ -58,12 +58,13 @@ struct LoginView: View {
                         VStack(spacing: 10) {
                             ForEach(cityViewModel.cities) { city in
                                 Button(action: {
+                                    print("Changing province to: \(city.name)")
                                     appState.selectedProvince = city
                                     showPicker.toggle()
                                 }) {
                                     Text(city.name)
                                         .font(.system(size: 18, weight: .medium))
-                                        .foregroundColor(city.name == appState.selectedProvince.name ? .yellow : .black)
+                                        .foregroundColor(.black)
                                         .padding()
                                         .frame(maxWidth: .infinity)
                                         .background(RoundedRectangle(cornerRadius: 10).fill(city.name == appState.selectedProvince.name ? Color.yellow.opacity(0.1) : Color.clear))
@@ -72,8 +73,9 @@ struct LoginView: View {
                         }
                         .padding()
                     }
-                }.padding()
-                    .presentationDetents([.medium, .large])
+                }
+                .padding()
+                .presentationDetents([.medium, .large])
             }
             Button("Confirmar") {
                 appState.isLoggedIn = true

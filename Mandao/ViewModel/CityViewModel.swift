@@ -11,10 +11,8 @@ class CityViewModel: ObservableObject {
 
         request.validate()
             .responseDecodable(of: CityListResponse.self) { response in
-                print("Response received")
                 switch response.result {
                 case .success(let cityListResponse):
-                    print("Request succeeded with response: \(cityListResponse)")
                     if cityListResponse.status == 1 {
                         DispatchQueue.main.async {
                             self.cities = cityListResponse.data

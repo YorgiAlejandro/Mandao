@@ -2,6 +2,7 @@ import SwiftUI
 
 struct BannerListView: View {
     @EnvironmentObject var bannerViewModel: BannerViewModel
+    @EnvironmentObject var appState: AppState
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -12,9 +13,6 @@ struct BannerListView: View {
             }
             .padding(.horizontal)
         }
-        .onAppear {
-            bannerViewModel.fetchBanners(areaId: 1) // Asegúrate de usar el areaID correcto
-        }
     }
 }
 
@@ -22,5 +20,6 @@ struct BannerListView_Previews: PreviewProvider {
     static var previews: some View {
         BannerListView()
             .environmentObject(BannerViewModel())
+            .environmentObject(AppState())
     }
 }

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct CategoryListView: View {
     @EnvironmentObject var categoryViewModel: CategoryViewModel
+    @EnvironmentObject var appState: AppState
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -12,9 +13,6 @@ struct CategoryListView: View {
             }
             .padding(.horizontal)
         }
-        .onAppear {
-            categoryViewModel.fetchCategories(areaId: 1) // Asegúrate de usar el areaID correcto
-        }
     }
 }
 
@@ -22,5 +20,6 @@ struct CategoryListView_Previews: PreviewProvider {
     static var previews: some View {
         CategoryListView()
             .environmentObject(CategoryViewModel())
+            .environmentObject(AppState())
     }
 }

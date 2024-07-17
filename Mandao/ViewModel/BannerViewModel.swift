@@ -11,10 +11,8 @@ class BannerViewModel: ObservableObject {
 
         request.validate()
             .responseDecodable(of: BannerListResponse.self) { response in
-                print("Response received")
                 switch response.result {
                 case .success(let bannerListResponse):
-                    print("Request succeeded with response: \(bannerListResponse)")
                     if bannerListResponse.status == 1 {
                         print("Status is 1, updating banners")
                         DispatchQueue.main.async {

@@ -11,10 +11,8 @@ class CategoryViewModel: ObservableObject {
 
         request.validate()
             .responseDecodable(of: CategoryListResponse.self) { response in
-                print("Response received")
                 switch response.result {
                 case .success(let categoryListResponse):
-                    print("Request succeeded with response: \(categoryListResponse)")
                     if categoryListResponse.status == 1 {
                         print("Status is 1, updating categories")
                         DispatchQueue.main.async {

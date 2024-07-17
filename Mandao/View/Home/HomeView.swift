@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject private var appState = AppState()
-    @StateObject private var cityViewModel = CityViewModel()
-    @StateObject private var bannerViewModel = BannerViewModel()
-    @StateObject private var categoryViewModel = CategoryViewModel()
-    @StateObject private var storeViewModel = StoreViewModel()
+    @EnvironmentObject var appState: AppState
+    @EnvironmentObject var bannerViewModel: BannerViewModel
+    @EnvironmentObject var categoryViewModel: CategoryViewModel
+    @EnvironmentObject var storeViewModel: StoreViewModel
+    @State private var currentProvinceId: Int?
 
     var body: some View {
         NavigationStack {
@@ -16,28 +16,33 @@ struct HomeView: View {
                     .padding(0)
                 TopBarView()
                     .padding(.bottom, 30)
-                    .environmentObject(appState)
-                    .environmentObject(cityViewModel)
                 BannerListView()
-                    .environmentObject(bannerViewModel)
                 CategoryListView()
-                    .environmentObject(categoryViewModel)
                 StoreListView()
-                    .environmentObject(storeViewModel)
+            }
+            .onAppear {
+                if currentProvinceId == nil || currentProvinceId != appState.selectedProvince.id {
+                    currentProvinceId = appState.selectedProvince.id
+                    fetchInitialData()
+                }
             }
         }
-        .onAppear {
-            print("HomeView onAppear called")
-            cityViewModel.fetchCities()
-            bannerViewModel.observeProvinceChanges(appState: appState)
-            categoryViewModel.observeProvinceChanges(appState: appState)
-            storeViewModel.observeProvinceChanges(appState: appState)
-        }
+    }
+
+    private func fetchInitialData() {
+        print("Fetching initial data for areaId: \(appState.selectedProvince.id)")
+        bannerViewModel.fetchBanners(areaId: appState.selectedProvince.id)
+        categoryViewModel.fetchCategories(areaId: appState.selectedProvince.id)
+        storeViewModel.fetchStores(areaId: appState.selectedProvince.id)
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(AppState())
+            .environmentObject(BannerViewModel())
+            .environmentObject(CategoryViewModel())
+            .environmentObject(StoreViewModel())
     }
 }
