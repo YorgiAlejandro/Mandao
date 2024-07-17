@@ -9,7 +9,7 @@ class AppState: ObservableObject {
             onProvinceChangedStores?()
         }
     }
-
+    
     var onProvinceChangedBanners: (() -> Void)?
     var onProvinceChangedCategories: (() -> Void)?
     var onProvinceChangedStores: (() -> Void)?

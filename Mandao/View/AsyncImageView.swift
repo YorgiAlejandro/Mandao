@@ -7,19 +7,21 @@ struct AsyncImageView: View {
         AsyncImage(url: URL(string: imageURL)) { phase in
             switch phase {
             case .empty:
-                ProgressView()
+                ZStack {
+                    Color.gray.opacity(0.1)
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle())
+                }
             case .success(let image):
                 image
                     .resizable()
                     .scaledToFill()
             case .failure:
-                Image(systemName: "photo")
-                    .resizable()
-                    .scaledToFit()
-                    .foregroundColor(.gray)
+                EmptyView()
             @unknown default:
                 EmptyView()
             }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }

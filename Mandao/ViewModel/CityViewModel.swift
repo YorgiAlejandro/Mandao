@@ -3,12 +3,12 @@ import SwiftUI
 
 class CityViewModel: ObservableObject {
     @Published var cities: [City] = []
-
+    
     func fetchCities() {
         print("fetchCities called")
         let url = "https://staging-delivery.mandao.app/api/v2/store/city-list"
         let request = AF.request(url)
-
+        
         request.validate()
             .responseDecodable(of: CityListResponse.self) { response in
                 switch response.result {

@@ -4,12 +4,12 @@ struct BannerCard<Destination: View>: View {
     let imageURL: String
     let name: String
     let destination: Destination
-
+    
     var body: some View {
         VStack(alignment: .leading) {
             AsyncImageView(imageURL: imageURL)
-                .frame(width: 280, height: 180)
-                .cornerRadius(40)
+                .frame(width: 280, height: 170)
+                .cornerRadius(30)
                 .shadow(color: .gray, radius: 6, x: 3, y: 3)
             HStack {
                 Text(name)
@@ -33,10 +33,11 @@ struct BannerCard<Destination: View>: View {
             .padding(.horizontal, 25)
         }
         .padding(.horizontal, 5)
+        .padding(.bottom, 5)
     }
 }
 
 #Preview{
-        BannerCard(imageURL: "https://example.com/image.jpg", name: "Restaurante Ejemplo", destination: LoginView())
-    
+    BannerCard(imageURL: "https://example.com/image.jpg", name: "Restaurante Ejemplo", destination: EmptyView())
 }
+

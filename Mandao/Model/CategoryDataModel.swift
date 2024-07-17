@@ -9,7 +9,7 @@ struct Category: Identifiable, Decodable {
     let status: Int
     let visible: Int
     let position: Int
-
+    
     enum CodingKeys: String, CodingKey {
         case id
         case name

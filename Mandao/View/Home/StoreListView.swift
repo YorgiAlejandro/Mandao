@@ -3,7 +3,7 @@ import SwiftUI
 struct StoreListView: View {
     @EnvironmentObject var storeViewModel: StoreViewModel
     @EnvironmentObject var appState: AppState
-
+    
     var body: some View {
         VStack {
             Text("Todos los negocios")
@@ -15,7 +15,7 @@ struct StoreListView: View {
             ScrollView {
                 LazyVStack {
                     ForEach(storeViewModel.stores) { store in
-                        StoreCard(imageURL: store.banner, name: store.name, destination: LoginView(), rating: store.averageRatings)
+                        StoreCard(imageURL: store.banner, name: store.name, destination: ProductDetailsView(storeId: store.id, currency: "$"), rating: store.averageRatings)
                     }
                 }
             }
@@ -24,10 +24,8 @@ struct StoreListView: View {
     }
 }
 
-struct StoreListView_Previews: PreviewProvider {
-    static var previews: some View {
-        StoreListView()
-            .environmentObject(StoreViewModel())
-            .environmentObject(AppState())
-    }
+#Preview{
+    StoreListView()
+        .environmentObject(StoreViewModel())
+        .environmentObject(AppState())
 }

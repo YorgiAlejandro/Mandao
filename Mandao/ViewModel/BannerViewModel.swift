@@ -3,12 +3,12 @@ import SwiftUI
 
 class BannerViewModel: ObservableObject {
     @Published var banners: [Banner] = []
-
+    
     func fetchBanners(areaId: Int) {
         print("fetchBanners called with areaId: \(areaId)")
         let url = "https://staging-delivery.mandao.app/api/v2/banners/\(areaId)/home"
         let request = AF.request(url)
-
+        
         request.validate()
             .responseDecodable(of: BannerListResponse.self) { response in
                 switch response.result {
@@ -26,7 +26,7 @@ class BannerViewModel: ObservableObject {
                 }
             }
     }
-
+    
     func observeProvinceChanges(appState: AppState) {
         appState.onProvinceChangedBanners = { [weak self] in
             guard let self = self else { return }

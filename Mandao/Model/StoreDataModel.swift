@@ -18,7 +18,7 @@ struct StoreListResponse: Decodable {
     let status: Int
     let message: String
     let storeList: [Store]
-
+    
     enum CodingKeys: String, CodingKey {
         case status
         case message

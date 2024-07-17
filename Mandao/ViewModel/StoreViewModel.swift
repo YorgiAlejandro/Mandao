@@ -3,12 +3,12 @@ import SwiftUI
 
 class StoreViewModel: ObservableObject {
     @Published var stores: [Store] = []
-
+    
     func fetchStores(areaId: Int) {
         print("fetchStores called with areaId: \(areaId)")
         let url = "https://staging-delivery.mandao.app/api/v2/customer/delivery/store-list-by-area/\(areaId)"
         let request = AF.request(url)
-
+        
         request.validate()
             .responseDecodable(of: StoreListResponse.self) { response in
                 switch response.result {
@@ -26,7 +26,7 @@ class StoreViewModel: ObservableObject {
                 }
             }
     }
-
+    
     func observeProvinceChanges(appState: AppState) {
         appState.onProvinceChangedStores = { [weak self] in
             guard let self = self else { return }

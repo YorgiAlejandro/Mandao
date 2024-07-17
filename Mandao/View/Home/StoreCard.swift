@@ -5,20 +5,13 @@ struct StoreCard<Destination: View>: View {
     let name: String
     let destination: Destination
     let rating: Double
-
+    
     var body: some View {
         NavigationLink(destination: destination) {
             VStack(alignment: .leading, spacing: 0) {
-                AsyncImage(url: URL(string: imageURL)) { image in
-                    image
-                        .resizable()
-                        .scaledToFill()
-                        .frame(height: 120)
-                        .clipped()
-                } placeholder: {
-                    Color.gray
-                        .frame(height: 120)
-                }
+                AsyncImageView(imageURL: imageURL)
+                    .frame(height: 100)
+                    .clipped()
                 HStack {
                     Text(name)
                         .foregroundColor(.black)
@@ -42,7 +35,7 @@ struct StoreCard<Destination: View>: View {
                     .padding(.top, 8)
                 }
                 .background(Color.white)
-                .frame(height: 50)
+                .frame(height: 45)
                 .cornerRadius(15, corners: [.bottomLeft, .bottomRight])
                 .padding(.horizontal, 5)
             }
@@ -73,6 +66,6 @@ extension View {
 }
 
 #Preview{
-    StoreCard(imageURL: "https://example.com/image.jpg", name: "Restaurante Ejemplo", destination: LoginView(), rating: 3.5)
+    StoreCard(imageURL: "https://example.com/image.jpg", name: "Restaurante Ejemplo", destination: EmptyView(), rating: 3.5)
 }
 

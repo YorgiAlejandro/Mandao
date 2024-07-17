@@ -6,7 +6,7 @@ struct ContentView: View {
     @StateObject private var bannerViewModel = BannerViewModel()
     @StateObject private var categoryViewModel = CategoryViewModel()
     @StateObject private var storeViewModel = StoreViewModel()
-
+    
     var body: some View {
         Group {
             if appState.isLoggedIn {
@@ -31,8 +31,7 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview{
+    ContentView()
 }
+
